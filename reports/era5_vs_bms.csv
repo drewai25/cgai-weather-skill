@@ -1,0 +1,6 @@
+variable,n,MAE,RMSE,bias,correlation,obs_mean,era5_mean
+temperature_c,2386,0.577,0.795,0.077,0.893,27.824,27.901
+cloud_cover_pct,2386,26.196,33.148,-16.538,0.535,69.939,53.401
+precipitation_6h,336,1.925,11.233,-0.552,0.257,1.557,1.005
+precipitation_12h,29,1.793,3.503,-0.779,0.697,2.379,1.6
+precipitation_pooled,365,1.915,10.823,-0.57,0.268,1.622,1.052

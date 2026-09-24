@@ -1,0 +1,62 @@
+{
+  "grid_cell": {
+    "era5_lat": 13.110721,
+    "era5_lon": -59.50821,
+    "station_lat": 13.07333,
+    "station_lon": -59.5,
+    "offset_km_approx": 4.3
+  },
+  "matched_hours": 2386,
+  "results": [
+    {
+      "variable": "temperature_c",
+      "n": 2386,
+      "MAE": 0.577,
+      "RMSE": 0.795,
+      "bias": 0.077,
+      "correlation": 0.893,
+      "obs_mean": 27.824,
+      "era5_mean": 27.901
+    },
+    {
+      "variable": "cloud_cover_pct",
+      "n": 2386,
+      "MAE": 26.196,
+      "RMSE": 33.148,
+      "bias": -16.538,
+      "correlation": 0.535,
+      "obs_mean": 69.939,
+      "era5_mean": 53.401
+    },
+    {
+      "variable": "precipitation_6h",
+      "n": 336,
+      "MAE": 1.925,
+      "RMSE": 11.233,
+      "bias": -0.552,
+      "correlation": 0.257,
+      "obs_mean": 1.557,
+      "era5_mean": 1.005
+    },
+    {
+      "variable": "precipitation_12h",
+      "n": 29,
+      "MAE": 1.793,
+      "RMSE": 3.503,
+      "bias": -0.779,
+      "correlation": 0.697,
+      "obs_mean": 2.379,
+      "era5_mean": 1.6
+    },
+    {
+      "variable": "precipitation_pooled",
+      "n": 365,
+      "MAE": 1.915,
+      "RMSE": 10.823,
+      "bias": -0.57,
+      "correlation": 0.268,
+      "obs_mean": 1.622,
+      "era5_mean": 1.052
+    }
+  ]
+}
