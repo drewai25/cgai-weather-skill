@@ -427,3 +427,32 @@ This reduces the precipitation sample to approximately four observations per day
 — around 400 across the window, against roughly 2,385 for the hourly variables.
 Conclusions drawn about precipitation rest on a substantially smaller sample and
 are qualified accordingly.
+
+---
+
+## Amendment 2 — 24 September 2026
+
+Recorded after parsing. Amendment 1 §A1.2 states that BMS precipitation is a
+six-hour accumulation. That is incomplete.
+
+**Finding.** Of 365 distinct precipitation observations, 336 span six hours and
+29 span twelve. Every twelve-hour record reports at 12:00 UTC covering
+00:00–12:00, indicating that where the 06:00 report is absent the station reports
+a combined total at 12:00 rather than two separate accumulations.
+
+**Corrected alignment rule.** Each precipitation observation is compared against a
+reanalysis sum over **its own** interval, taken from phenomenonTime, not over an
+assumed six-hour window. Comparing a twelve-hour accumulation against six hours of
+reanalysis would roughly double the observed value relative to the forecast.
+
+`interval_start`, `interval_end` and the derived `period_hours` are retained
+through every stage and used directly in the comparison.
+
+**Reporting.** Results are reported separately for six-hour and twelve-hour
+accumulations as well as pooled, so that any difference in agreement between the
+two is visible rather than averaged away.
+
+**Coverage note.** The 29 twelve-hour records represent days on which a scheduled
+six-hourly report was not issued. Precipitation coverage across the window is
+therefore 365 observations rather than the 396 that continuous six-hourly
+reporting would produce.
