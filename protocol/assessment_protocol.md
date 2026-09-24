@@ -370,3 +370,60 @@ Open-Meteo forecast and reanalysis data: CC BY 4.0.
 
 *Frozen before forecast data acquisition. Changes after this point are recorded as
 dated amendments with reasons, not silent edits.*
+
+---
+
+## Amendment 1 — 24 September 2026
+
+Recorded after data acquisition, before parsing. Two findings required changes to
+the frozen protocol. Both are recorded here rather than edited into the body.
+
+### A1.1 Upper-air soundings present in the SYNOP collection
+
+The BMS SYNOP collection returns records named `air_temperature` that are not
+surface observations. Inspection found values between −20°C and −52°C at
+approximately five-second intervals, with the reporting position drifting
+north-west over the course of each series. These are radiosonde ascents.
+
+Two fields distinguish them:
+
+| | Surface SYNOP | Upper-air sounding |
+|---|---|---|
+| Geometry | Three coordinates, including elevation | Two coordinates, no elevation |
+| phenomenonTime | Point, equal to reportTime | Interval spanning the ascent |
+| Position | Fixed at 13.073N 59.500W | Drifts with the balloon |
+
+**Exclusion rule.** A temperature record is treated as a surface observation only
+where the geometry carries a third coordinate and phenomenonTime is a point value
+equal to reportTime. Records failing either test are excluded from surface
+analysis, retained in the raw data, and their count reported.
+
+Of 3,574 records named `air_temperature`, approximately 1,190 are expected to be
+upper-air levels. The exact count is reported by the parser.
+
+Station elevation varies between surface records (62.1 m, 57.74 m observed),
+which appears to be barometric rather than a fixed height. The filter tests for
+the presence of a third coordinate, not its value.
+
+### A1.2 Precipitation accumulation period
+
+§4 states that precipitation is accumulated over the preceding hour. That is
+correct for Open-Meteo and incorrect for BMS.
+
+BMS `total_precipitation_or_total_water_equivalent` is a **six-hour accumulation**
+ending at reportTime, with the interval carried in phenomenonTime in
+`start/end` form. Units are kg m⁻², numerically equal to mm.
+
+**Alignment rule.** BMS precipitation is compared against a reanalysis sum over
+the identical six-hour interval. It is never joined to a single hour. Both
+reportTime and the phenomenonTime interval are preserved through every stage.
+
+**Duplication.** Each precipitation observation appears twice in the collection
+with distinct record identifiers and identical reportTime and phenomenonTime.
+Records are deduplicated on that pair. Where paired values disagree, the
+disagreement is reported rather than silently resolved.
+
+This reduces the precipitation sample to approximately four observations per day
+— around 400 across the window, against roughly 2,385 for the hourly variables.
+Conclusions drawn about precipitation rest on a substantially smaller sample and
+are qualified accordingly.
