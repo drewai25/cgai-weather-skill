@@ -672,7 +672,7 @@ All dates 2024, carrier count in brackets. End date per A4.6.
 Binding constraint is forecast archive availability in every cell. The
 Amendment 3 frozen window is not redefined; archive availability is a
 separate input and the effective window is their intersection. Latest
-effective start 2024-03-13, retaining 931 of the 1004 frozen days.
+effective start 2024-03-13, retaining 932 of the 1004 frozen days, counting both endpoints.
 
 Coverage: Meteo-France carries leads 1-3 only, ICON leads 1-6, JMA no
 irradiance at any lead. Carriers never fall below three. Zero
