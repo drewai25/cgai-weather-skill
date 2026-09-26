@@ -622,3 +622,103 @@ Weatherbit against the nine standards whether or not they are tested.
 Every model named. No `best_match`. Provenance preserved on every row.
 
 ---
+
+---
+
+## Amendment 4 — 26 September 2026 (PROPOSED, awaiting sign-off)
+
+### A4.1 Definition of availability (binding once signed off)
+
+    available(day, lead, model, variable) := all 24 hourly values
+                                             present and non-null
+
+A partial day is not available. An hourly join against an observational
+reference cannot use a day holding 2 of 24 hours without a hole at the
+window boundary, and because each lead's boundary day falls on a different
+date, a partial start would bias any lead-1 against lead-7 comparison.
+
+### A4.2 Why this is needed
+
+Neither the protocol nor Amendment 3 defined availability for forecast
+data. Amendment 3 fixed a 90% completeness threshold for Observatory
+observations and was silent on forecasts. In practice "available" meant
+"at least one hour", which is what produced a window table that a direct
+check then failed.
+
+Observed first-day partials: ECMWF 2 hours, GFS 12, GEM 14, ICON 12.
+
+### A4.3 Measurement, not derivation
+
+Every (model, variable, lead) start is measured independently. A clean
+archive switch-on makes the per-lead dates derivable from lead 1 by a
+one-day-per-lead shift; a ramp-up does not, because lead 1 completes
+before lead 7. ECMWF irradiance ramps. Deriving where the archive happens
+to be clean and measuring where it is not would leave correctness
+dependent on which case applied, so all 201 exposed combinations are
+measured.
+
+### A4.4 Measured effective starts
+
+All dates 2024, carrier count in brackets. End date per A4.6.
+
+    variable              L1       L2       L3       L4       L5       L6       L7
+    temperature_2m      02-04[6] 02-05[6] 02-06[6] 02-07[5] 02-08[5] 02-09[5] 02-10[4]
+    precipitation       02-04[6] 02-05[6] 02-06[6] 02-07[5] 02-08[5] 02-09[5] 02-10[4]
+    cloud_cover         02-04[6] 02-05[6] 02-06[6] 02-07[5] 02-08[5] 02-09[5] 02-10[4]
+    shortwave_radiation 03-07[5] 03-08[5] 03-09[5] 03-10[4] 03-11[4] 03-12[4] 03-13[3]
+    direct_normal_irr.  03-07[5] 03-08[5] 03-09[5] 03-10[4] 03-11[4] 03-12[4] 03-13[3]
+    diffuse_radiation   03-07[5] 03-08[5] 03-09[5] 03-10[4] 03-11[4] 03-12[4] 03-13[3]
+
+Binding constraint is forecast archive availability in every cell. The
+Amendment 3 frozen window is not redefined; archive availability is a
+separate input and the effective window is their intersection. Latest
+effective start 2024-03-13, retaining 931 of the 1004 frozen days.
+
+Coverage: Meteo-France carries leads 1-3 only, ICON leads 1-6, JMA no
+irradiance at any lead. Carriers never fall below three. Zero
+combinations unverified.
+
+### A4.5 Floor dates
+
+Where a model was already complete at the scan floor (2023-12-02, thirty
+days before the frozen window), the recorded date is that floor and not a
+measured start. Those 28 rows are marked date_is_floor=yes in
+archive_variable_matrix_v3_annotated.csv. Their true starts precede the
+frozen window, where the frozen window binds, so the exact dates do not
+affect any reported figure.
+
+### A4.6 Window end
+
+The Amendment 3 window ends 2026-09-30, which had not yet occurred when
+these measurements were taken. To be resolved before the fetch: either
+the last complete day verified at fetch time, or hold the approved 30th
+and fetch after month end. Recommendation is the latter, so the approved
+dates stand unchanged.
+
+### A4.7 Status
+
+Proposed, not frozen. No forecast data is fetched until this is signed
+off, because the definition in A4.1 determines every start date in A4.4.
+
+### A4.8 Provenance and tool status
+
+data/raw/archive_variable_matrix.csv and the files derived from it were
+produced by scripts/probe_archive.py as of commit 1fe9c77. The version
+committed at 125dfff changes variable_start(): instead of assigning the
+model archive start to every lead, it computes the lead-shifted date and
+confirms it with two probes, falling back to a binary search where
+confirmation fails. The current script therefore would not reproduce
+those CSVs, and they are retained as the record of what was actually run
+rather than regenerated.
+
+No reported figure depends on this. measure_complete_start.py takes only
+two things from the raw matrix: which cells were exposed at the recent
+probe, which this change does not affect, and a starting estimate for its
+scan, which walks both forward and backward and so cannot be made wrong
+by a wrong estimate, only slower.
+
+probe_archive.py tests availability as at least one non-null hour. Under
+A4.1 that is not availability. It remains valid for discovering which
+(model, variable, lead) combinations the archive exposes, and it is not a
+valid source of window start dates. The authority for every date in A4.4
+is measure_complete_start.py.
