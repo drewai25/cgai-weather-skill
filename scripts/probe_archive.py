@@ -208,10 +208,16 @@ def variable_start(model: str, variable: str, model_start: date,
                    recent_status: dict[int, str]) -> dict[int, tuple]:
     """Effective start per lead for one (model, variable).
 
-    Leads 1 and 7 bracket the range and are searched individually when the
-    near-start probe shows the variable arrived after the model archive did.
-    Intermediate leads are then confirmed at the resolved date rather than
-    assumed, and any lead that disagrees is searched on its own.
+    previous_dayN is the run issued N days before the valid date, so an
+    archive that began recording on one run date shows lead N first
+    appearing (N - REFERENCE_LEAD) days after the reference lead. This was
+    verified empirically for ecmwf_ifs025 (scripts/verify_lead_shift.py).
+
+    For a variable present at the near-start probe, the lead-shifted date
+    is computed and then CONFIRMED by two probes: available on that date,
+    not available the day before. A lead that fails confirmation, or that
+    is absent at the near-start probe, gets its own binary search. No lead
+    inherits another lead's start date.
     """
     out: dict[int, tuple] = {}
 
@@ -223,9 +229,22 @@ def variable_start(model: str, variable: str, model_start: date,
 
         early = probe(model, variable, lead, near)
         if early == AVAILABLE:
-            out[lead] = (model_start, AVAILABLE,
-                         f"present at {near.isoformat()}, "
-                         "tracks the model archive start")
+            shift = lead - REFERENCE_LEAD
+            expected = model_start + timedelta(days=shift)
+            on_day = probe(model, variable, lead, expected)
+            day_before = probe(model, variable, lead,
+                               expected - timedelta(days=1))
+            if on_day == AVAILABLE and day_before != AVAILABLE:
+                out[lead] = (expected, AVAILABLE,
+                             f"tracks the model archive start, lead-shifted "
+                             f"{shift} day(s); confirmed available "
+                             f"{expected.isoformat()} and absent the day before")
+            else:
+                start, note = binary_search_start(model, variable, lead,
+                                                  ceiling)
+                out[lead] = (start, AVAILABLE,
+                             f"present at {near.isoformat()}, lead-shift "
+                             f"not confirmed; {note}")
         else:
             start, note = binary_search_start(model, variable, lead, ceiling)
             out[lead] = (start, early,

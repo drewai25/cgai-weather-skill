@@ -1,0 +1,295 @@
+model,variable,lead_day,estimate,first_complete_day,verified,blended,date_is_floor,note
+best_match,temperature_2m,1,2021-03-24,,no,True,no,
+best_match,temperature_2m,2,2021-03-24,,no,True,no,
+best_match,temperature_2m,3,2021-03-24,,no,True,no,
+best_match,temperature_2m,4,2021-03-24,,no,True,no,
+best_match,temperature_2m,5,2021-03-24,,no,True,no,
+best_match,temperature_2m,6,2021-03-24,,no,True,no,
+best_match,temperature_2m,7,2021-03-24,,no,True,no,
+best_match,precipitation,1,2024-01-19,,no,True,no,
+best_match,precipitation,2,2024-01-20,,no,True,no,
+best_match,precipitation,3,2024-01-21,,no,True,no,
+best_match,precipitation,4,2024-01-22,,no,True,no,
+best_match,precipitation,5,2024-01-23,,no,True,no,
+best_match,precipitation,6,2024-01-24,,no,True,no,
+best_match,precipitation,7,2024-01-25,,no,True,no,
+best_match,shortwave_radiation,1,2024-01-19,,no,True,no,
+best_match,shortwave_radiation,2,2024-01-20,,no,True,no,
+best_match,shortwave_radiation,3,2024-01-21,,no,True,no,
+best_match,shortwave_radiation,4,2024-01-22,,no,True,no,
+best_match,shortwave_radiation,5,2024-01-23,,no,True,no,
+best_match,shortwave_radiation,6,2024-01-24,,no,True,no,
+best_match,shortwave_radiation,7,2024-01-25,,no,True,no,
+best_match,direct_normal_irradiance,1,2024-01-19,,no,True,no,
+best_match,direct_normal_irradiance,2,2024-01-20,,no,True,no,
+best_match,direct_normal_irradiance,3,2024-01-21,,no,True,no,
+best_match,direct_normal_irradiance,4,2024-01-22,,no,True,no,
+best_match,direct_normal_irradiance,5,2024-01-23,,no,True,no,
+best_match,direct_normal_irradiance,6,2024-01-24,,no,True,no,
+best_match,direct_normal_irradiance,7,2024-01-25,,no,True,no,
+best_match,diffuse_radiation,1,2024-01-19,,no,True,no,
+best_match,diffuse_radiation,2,2024-01-20,,no,True,no,
+best_match,diffuse_radiation,3,2024-01-21,,no,True,no,
+best_match,diffuse_radiation,4,2024-01-22,,no,True,no,
+best_match,diffuse_radiation,5,2024-01-23,,no,True,no,
+best_match,diffuse_radiation,6,2024-01-24,,no,True,no,
+best_match,diffuse_radiation,7,2024-01-25,,no,True,no,
+best_match,cloud_cover,1,2024-01-19,,no,True,no,
+best_match,cloud_cover,2,2024-01-20,,no,True,no,
+best_match,cloud_cover,3,2024-01-21,,no,True,no,
+best_match,cloud_cover,4,2024-01-22,,no,True,no,
+best_match,cloud_cover,5,2024-01-23,,no,True,no,
+best_match,cloud_cover,6,2024-01-24,,no,True,no,
+best_match,cloud_cover,7,2024-01-25,,no,True,no,
+ecmwf_ifs025,temperature_2m,1,2024-02-04,2024-02-04,yes,False,no,first 24/24 at the estimate
+ecmwf_ifs025,temperature_2m,2,2024-02-04,2024-02-05,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,temperature_2m,3,2024-02-04,2024-02-06,yes,False,no,first 24/24 at +2 d from the scan start
+ecmwf_ifs025,temperature_2m,4,2024-02-04,2024-02-07,yes,False,no,first 24/24 at +3 d from the scan start
+ecmwf_ifs025,temperature_2m,5,2024-02-04,2024-02-08,yes,False,no,first 24/24 at +4 d from the scan start
+ecmwf_ifs025,temperature_2m,6,2024-02-04,2024-02-09,yes,False,no,first 24/24 at +5 d from the scan start
+ecmwf_ifs025,temperature_2m,7,2024-02-04,2024-02-10,yes,False,no,first 24/24 at +6 d from the scan start
+ecmwf_ifs025,precipitation,1,2024-02-04,2024-02-04,yes,False,no,first 24/24 at the estimate
+ecmwf_ifs025,precipitation,2,2024-02-04,2024-02-05,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,precipitation,3,2024-02-04,2024-02-06,yes,False,no,first 24/24 at +2 d from the scan start
+ecmwf_ifs025,precipitation,4,2024-02-04,2024-02-07,yes,False,no,first 24/24 at +3 d from the scan start
+ecmwf_ifs025,precipitation,5,2024-02-04,2024-02-08,yes,False,no,first 24/24 at +4 d from the scan start
+ecmwf_ifs025,precipitation,6,2024-02-04,2024-02-09,yes,False,no,first 24/24 at +5 d from the scan start
+ecmwf_ifs025,precipitation,7,2024-02-04,2024-02-10,yes,False,no,first 24/24 at +6 d from the scan start
+ecmwf_ifs025,shortwave_radiation,1,2024-03-06,2024-03-07,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,2,2024-03-07,2024-03-08,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,3,2024-03-08,2024-03-09,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,4,2024-03-09,2024-03-10,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,5,2024-03-10,2024-03-11,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,6,2024-03-11,2024-03-12,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,shortwave_radiation,7,2024-03-12,2024-03-13,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,1,2024-03-06,2024-03-07,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,2,2024-03-07,2024-03-08,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,3,2024-03-08,2024-03-09,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,4,2024-03-09,2024-03-10,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,5,2024-03-10,2024-03-11,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,6,2024-03-11,2024-03-12,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,direct_normal_irradiance,7,2024-03-12,2024-03-13,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,1,2024-03-06,2024-03-07,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,2,2024-03-07,2024-03-08,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,3,2024-03-08,2024-03-09,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,4,2024-03-09,2024-03-10,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,5,2024-03-10,2024-03-11,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,6,2024-03-11,2024-03-12,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,diffuse_radiation,7,2024-03-12,2024-03-13,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,cloud_cover,1,2024-02-04,2024-02-04,yes,False,no,first 24/24 at the estimate
+ecmwf_ifs025,cloud_cover,2,2024-02-04,2024-02-05,yes,False,no,first 24/24 at +1 d from the scan start
+ecmwf_ifs025,cloud_cover,3,2024-02-04,2024-02-06,yes,False,no,first 24/24 at +2 d from the scan start
+ecmwf_ifs025,cloud_cover,4,2024-02-04,2024-02-07,yes,False,no,first 24/24 at +3 d from the scan start
+ecmwf_ifs025,cloud_cover,5,2024-02-04,2024-02-08,yes,False,no,first 24/24 at +4 d from the scan start
+ecmwf_ifs025,cloud_cover,6,2024-02-04,2024-02-09,yes,False,no,first 24/24 at +5 d from the scan start
+ecmwf_ifs025,cloud_cover,7,2024-02-04,2024-02-10,yes,False,no,first 24/24 at +6 d from the scan start
+gfs_seamless,temperature_2m,1,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,2,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,3,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,4,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,5,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,6,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,temperature_2m,7,2021-03-24,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+gfs_seamless,precipitation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,2,2024-01-20,2024-01-21,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,3,2024-01-21,2024-01-22,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,4,2024-01-22,2024-01-23,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,5,2024-01-23,2024-01-24,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,6,2024-01-24,2024-01-25,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,precipitation,7,2024-01-25,2024-01-26,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,2,2024-01-20,2024-01-21,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,3,2024-01-21,2024-01-22,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,4,2024-01-22,2024-01-23,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,5,2024-01-23,2024-01-24,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,6,2024-01-24,2024-01-25,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,shortwave_radiation,7,2024-01-25,2024-01-26,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,2,2024-01-20,2024-01-21,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,3,2024-01-21,2024-01-22,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,4,2024-01-22,2024-01-23,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,5,2024-01-23,2024-01-24,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,6,2024-01-24,2024-01-25,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,direct_normal_irradiance,7,2024-01-25,2024-01-26,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,2,2024-01-20,2024-01-21,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,3,2024-01-21,2024-01-22,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,4,2024-01-22,2024-01-23,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,5,2024-01-23,2024-01-24,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,6,2024-01-24,2024-01-25,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,diffuse_radiation,7,2024-01-25,2024-01-26,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,2,2024-01-20,2024-01-21,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,3,2024-01-21,2024-01-22,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,4,2024-01-22,2024-01-23,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,5,2024-01-23,2024-01-24,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,6,2024-01-24,2024-01-25,yes,False,no,first 24/24 at +1 d from the scan start
+gfs_seamless,cloud_cover,7,2024-01-25,2024-01-26,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,temperature_2m,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,temperature_2m,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,temperature_2m,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,temperature_2m,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,temperature_2m,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,temperature_2m,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,temperature_2m,7,,,no,False,no,
+icon_seamless,precipitation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,precipitation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,precipitation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,precipitation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,precipitation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,precipitation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,precipitation,7,,,no,False,no,
+icon_seamless,shortwave_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,shortwave_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,shortwave_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,shortwave_radiation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,shortwave_radiation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,shortwave_radiation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,shortwave_radiation,7,,,no,False,no,
+icon_seamless,direct_normal_irradiance,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,direct_normal_irradiance,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,direct_normal_irradiance,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,direct_normal_irradiance,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,direct_normal_irradiance,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,direct_normal_irradiance,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,direct_normal_irradiance,7,,,no,False,no,
+icon_seamless,diffuse_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,diffuse_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,diffuse_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,diffuse_radiation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,diffuse_radiation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,diffuse_radiation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,diffuse_radiation,7,,,no,False,no,
+icon_seamless,cloud_cover,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+icon_seamless,cloud_cover,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+icon_seamless,cloud_cover,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+icon_seamless,cloud_cover,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+icon_seamless,cloud_cover,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+icon_seamless,cloud_cover,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+icon_seamless,cloud_cover,7,,,no,False,no,
+gem_seamless,temperature_2m,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,temperature_2m,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,temperature_2m,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,temperature_2m,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,temperature_2m,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,temperature_2m,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,temperature_2m,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+gem_seamless,precipitation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,precipitation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,precipitation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,precipitation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,precipitation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,precipitation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,precipitation,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+gem_seamless,shortwave_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,shortwave_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,shortwave_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,shortwave_radiation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,shortwave_radiation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,shortwave_radiation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,shortwave_radiation,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+gem_seamless,direct_normal_irradiance,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,direct_normal_irradiance,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,direct_normal_irradiance,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,direct_normal_irradiance,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,direct_normal_irradiance,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,direct_normal_irradiance,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,direct_normal_irradiance,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+gem_seamless,diffuse_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,diffuse_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,diffuse_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,diffuse_radiation,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,diffuse_radiation,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,diffuse_radiation,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,diffuse_radiation,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+gem_seamless,cloud_cover,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+gem_seamless,cloud_cover,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+gem_seamless,cloud_cover,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+gem_seamless,cloud_cover,4,2024-01-19,2024-01-23,yes,False,no,first 24/24 at +4 d from the scan start
+gem_seamless,cloud_cover,5,2024-01-19,2024-01-24,yes,False,no,first 24/24 at +5 d from the scan start
+gem_seamless,cloud_cover,6,2024-01-19,2024-01-25,yes,False,no,first 24/24 at +6 d from the scan start
+gem_seamless,cloud_cover,7,2024-01-19,2024-01-26,yes,False,no,first 24/24 at +7 d from the scan start
+meteofrance_seamless,temperature_2m,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,temperature_2m,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,temperature_2m,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,temperature_2m,4,,,no,False,no,
+meteofrance_seamless,temperature_2m,5,,,no,False,no,
+meteofrance_seamless,temperature_2m,6,,,no,False,no,
+meteofrance_seamless,temperature_2m,7,,,no,False,no,
+meteofrance_seamless,precipitation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,precipitation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,precipitation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,precipitation,4,,,no,False,no,
+meteofrance_seamless,precipitation,5,,,no,False,no,
+meteofrance_seamless,precipitation,6,,,no,False,no,
+meteofrance_seamless,precipitation,7,,,no,False,no,
+meteofrance_seamless,shortwave_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,shortwave_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,shortwave_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,shortwave_radiation,4,,,no,False,no,
+meteofrance_seamless,shortwave_radiation,5,,,no,False,no,
+meteofrance_seamless,shortwave_radiation,6,,,no,False,no,
+meteofrance_seamless,shortwave_radiation,7,,,no,False,no,
+meteofrance_seamless,direct_normal_irradiance,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,direct_normal_irradiance,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,direct_normal_irradiance,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,direct_normal_irradiance,4,,,no,False,no,
+meteofrance_seamless,direct_normal_irradiance,5,,,no,False,no,
+meteofrance_seamless,direct_normal_irradiance,6,,,no,False,no,
+meteofrance_seamless,direct_normal_irradiance,7,,,no,False,no,
+meteofrance_seamless,diffuse_radiation,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,diffuse_radiation,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,diffuse_radiation,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,diffuse_radiation,4,,,no,False,no,
+meteofrance_seamless,diffuse_radiation,5,,,no,False,no,
+meteofrance_seamless,diffuse_radiation,6,,,no,False,no,
+meteofrance_seamless,diffuse_radiation,7,,,no,False,no,
+meteofrance_seamless,cloud_cover,1,2024-01-19,2024-01-20,yes,False,no,first 24/24 at +1 d from the scan start
+meteofrance_seamless,cloud_cover,2,2024-01-19,2024-01-21,yes,False,no,first 24/24 at +2 d from the scan start
+meteofrance_seamless,cloud_cover,3,2024-01-19,2024-01-22,yes,False,no,first 24/24 at +3 d from the scan start
+meteofrance_seamless,cloud_cover,4,,,no,False,no,
+meteofrance_seamless,cloud_cover,5,,,no,False,no,
+meteofrance_seamless,cloud_cover,6,,,no,False,no,
+meteofrance_seamless,cloud_cover,7,,,no,False,no,
+jma_seamless,temperature_2m,1,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,2,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,3,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,4,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,5,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,6,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,temperature_2m,7,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,1,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,2,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,3,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,4,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,5,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,6,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,precipitation,7,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,shortwave_radiation,1,,,no,False,no,
+jma_seamless,shortwave_radiation,2,,,no,False,no,
+jma_seamless,shortwave_radiation,3,,,no,False,no,
+jma_seamless,shortwave_radiation,4,,,no,False,no,
+jma_seamless,shortwave_radiation,5,,,no,False,no,
+jma_seamless,shortwave_radiation,6,,,no,False,no,
+jma_seamless,shortwave_radiation,7,,,no,False,no,
+jma_seamless,direct_normal_irradiance,1,,,no,False,no,
+jma_seamless,direct_normal_irradiance,2,,,no,False,no,
+jma_seamless,direct_normal_irradiance,3,,,no,False,no,
+jma_seamless,direct_normal_irradiance,4,,,no,False,no,
+jma_seamless,direct_normal_irradiance,5,,,no,False,no,
+jma_seamless,direct_normal_irradiance,6,,,no,False,no,
+jma_seamless,direct_normal_irradiance,7,,,no,False,no,
+jma_seamless,diffuse_radiation,1,,,no,False,no,
+jma_seamless,diffuse_radiation,2,,,no,False,no,
+jma_seamless,diffuse_radiation,3,,,no,False,no,
+jma_seamless,diffuse_radiation,4,,,no,False,no,
+jma_seamless,diffuse_radiation,5,,,no,False,no,
+jma_seamless,diffuse_radiation,6,,,no,False,no,
+jma_seamless,diffuse_radiation,7,,,no,False,no,
+jma_seamless,cloud_cover,1,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,2,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,3,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,4,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,5,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,6,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
+jma_seamless,cloud_cover,7,2021-01-01,2023-12-02,yes,False,yes,"complete at or before 2023-12-02, the scan floor; earlier than the frozen window, which binds"
