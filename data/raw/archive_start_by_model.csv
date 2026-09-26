@@ -1,0 +1,8 @@
+model,archive_start,note,blended,probed_on,ceiling
+best_match,2021-03-24,"binary search, resolved to the day",True,2026-09-26,2026-09-12
+ecmwf_ifs025,2024-02-04,"binary search, resolved to the day",False,2026-09-26,2026-09-12
+gfs_seamless,2021-03-24,"binary search, resolved to the day",False,2026-09-26,2026-09-12
+icon_seamless,2024-01-19,"binary search, resolved to the day",False,2026-09-26,2026-09-12
+gem_seamless,2024-01-19,"binary search, resolved to the day",False,2026-09-26,2026-09-12
+meteofrance_seamless,2024-01-19,"binary search, resolved to the day",False,2026-09-26,2026-09-12
+jma_seamless,2021-01-01,begins at or before the search floor,False,2026-09-26,2026-09-12

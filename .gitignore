@@ -5,3 +5,8 @@ __pycache__/
 .env
 .DS_Store
 .ipynb_checkpoints/
+
+# availability metadata, not bulk data — keep tracked
+!data/raw/archive_start_by_model.csv
+!data/raw/archive_variable_matrix.csv
+!data/raw/effective_window_by_variable_lead.csv

@@ -1,0 +1,295 @@
+model,variable,lead_day,status_recent,status_near_start,effective_start,method,blended
+best_match,temperature_2m,1,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,2,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,3,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,4,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,5,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,6,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,temperature_2m,7,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",True
+best_match,precipitation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",True
+best_match,precipitation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",True
+best_match,shortwave_radiation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",True
+best_match,direct_normal_irradiance,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",True
+best_match,diffuse_radiation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",True
+best_match,cloud_cover,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",True
+ecmwf_ifs025,temperature_2m,1,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,2,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,3,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,4,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,5,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,6,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,temperature_2m,7,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,1,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,2,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,3,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,4,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,5,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,6,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,precipitation,7,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,shortwave_radiation,1,available,empty,2024-03-06,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,2,available,empty,2024-03-07,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,3,available,empty,2024-03-08,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,4,available,empty,2024-03-09,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,5,available,empty,2024-03-10,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,6,available,empty,2024-03-11,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,shortwave_radiation,7,available,empty,2024-03-12,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,1,available,empty,2024-03-06,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,2,available,empty,2024-03-07,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,3,available,empty,2024-03-08,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,4,available,empty,2024-03-09,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,5,available,empty,2024-03-10,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,6,available,empty,2024-03-11,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,direct_normal_irradiance,7,available,empty,2024-03-12,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,1,available,empty,2024-03-06,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,2,available,empty,2024-03-07,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,3,available,empty,2024-03-08,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,4,available,empty,2024-03-09,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,5,available,empty,2024-03-10,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,6,available,empty,2024-03-11,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,diffuse_radiation,7,available,empty,2024-03-12,"added after the model archive start; binary search, resolved to the day",False
+ecmwf_ifs025,cloud_cover,1,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,2,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,3,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,4,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,5,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,6,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+ecmwf_ifs025,cloud_cover,7,available,available,2024-02-04,"present at 2024-03-05, tracks the model archive start",False
+gfs_seamless,temperature_2m,1,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,2,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,3,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,4,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,5,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,6,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,temperature_2m,7,available,available,2021-03-24,"present at 2021-04-23, tracks the model archive start",False
+gfs_seamless,precipitation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,precipitation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,shortwave_radiation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,direct_normal_irradiance,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,diffuse_radiation,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,1,available,empty,2024-01-19,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,2,available,empty,2024-01-20,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,3,available,empty,2024-01-21,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,4,available,empty,2024-01-22,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,5,available,empty,2024-01-23,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,6,available,empty,2024-01-24,"added after the model archive start; binary search, resolved to the day",False
+gfs_seamless,cloud_cover,7,available,empty,2024-01-25,"added after the model archive start; binary search, resolved to the day",False
+icon_seamless,temperature_2m,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,temperature_2m,7,empty,empty,,absent at the recent probe date,False
+icon_seamless,precipitation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,precipitation,7,empty,empty,,absent at the recent probe date,False
+icon_seamless,shortwave_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,shortwave_radiation,7,empty,empty,,absent at the recent probe date,False
+icon_seamless,direct_normal_irradiance,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,direct_normal_irradiance,7,empty,empty,,absent at the recent probe date,False
+icon_seamless,diffuse_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,diffuse_radiation,7,empty,empty,,absent at the recent probe date,False
+icon_seamless,cloud_cover,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+icon_seamless,cloud_cover,7,empty,empty,,absent at the recent probe date,False
+gem_seamless,temperature_2m,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,temperature_2m,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,precipitation,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,shortwave_radiation,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,direct_normal_irradiance,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,diffuse_radiation,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,4,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,5,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,6,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+gem_seamless,cloud_cover,7,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,temperature_2m,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,temperature_2m,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,temperature_2m,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,temperature_2m,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,temperature_2m,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,temperature_2m,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,temperature_2m,7,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,precipitation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,precipitation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,precipitation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,precipitation,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,precipitation,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,precipitation,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,precipitation,7,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,shortwave_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,shortwave_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,shortwave_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,shortwave_radiation,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,shortwave_radiation,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,shortwave_radiation,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,shortwave_radiation,7,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,direct_normal_irradiance,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,direct_normal_irradiance,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,direct_normal_irradiance,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,direct_normal_irradiance,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,direct_normal_irradiance,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,direct_normal_irradiance,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,direct_normal_irradiance,7,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,diffuse_radiation,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,diffuse_radiation,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,diffuse_radiation,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,diffuse_radiation,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,diffuse_radiation,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,diffuse_radiation,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,diffuse_radiation,7,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,cloud_cover,1,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,cloud_cover,2,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,cloud_cover,3,available,available,2024-01-19,"present at 2024-02-18, tracks the model archive start",False
+meteofrance_seamless,cloud_cover,4,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,cloud_cover,5,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,cloud_cover,6,empty,empty,,absent at the recent probe date,False
+meteofrance_seamless,cloud_cover,7,empty,empty,,absent at the recent probe date,False
+jma_seamless,temperature_2m,1,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,2,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,3,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,4,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,5,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,6,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,temperature_2m,7,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,1,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,2,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,3,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,4,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,5,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,6,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,precipitation,7,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,shortwave_radiation,1,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,2,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,3,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,4,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,5,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,6,empty,empty,,absent at the recent probe date,False
+jma_seamless,shortwave_radiation,7,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,1,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,2,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,3,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,4,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,5,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,6,empty,empty,,absent at the recent probe date,False
+jma_seamless,direct_normal_irradiance,7,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,1,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,2,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,3,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,4,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,5,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,6,empty,empty,,absent at the recent probe date,False
+jma_seamless,diffuse_radiation,7,empty,empty,,absent at the recent probe date,False
+jma_seamless,cloud_cover,1,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,2,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,3,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,4,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,5,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,6,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
+jma_seamless,cloud_cover,7,available,available,2021-01-01,"present at 2021-01-31, tracks the model archive start",False
