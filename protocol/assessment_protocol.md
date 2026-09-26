@@ -620,3 +620,167 @@ cell. The operational assessment in §10, extended to document Solcast and
 Weatherbit against the nine standards whether or not they are tested.
 
 Every model named. No `best_match`. Provenance preserved on every row.
+
+---
+
+## Amendment 3 — 26 September 2026
+
+Approved by Mottley Consulting following the coverage and seasonal-spread check.
+Freezes the verification window and records the methodological revisions arising
+from the assessment standards issued 22 and 25 September.
+
+### A3.1 Verification window — FROZEN
+
+**January 2024 to September 2026.** Approved on the basis that the window meets
+the intent of the two-year requirement when assessed as effective sample rather
+than calendar span. No exception to that standard is required.
+
+| | |
+|---|---|
+| Qualifying hours | 16,352 of 23,880 |
+| Qualifying daylight hours | ~5,800 |
+| Calendar span | 33 months |
+| Calendar months represented | 12 of 12 |
+
+**Completeness threshold: fixed at 90%** (>=3,240 of 3,600 one-second samples per
+hour). Selected from the observed completeness distribution before any scoring,
+and not revisited.
+
+**Documented outages exceeding 48 hours:**
+
+| Period | Hours |
+|---|---|
+| 13 March – 3 May 2024 | 1,236 |
+| 30 June – 8 July 2024 | 196 |
+| 14 October 2024 – 6 April 2025 | 4,195 |
+| 29 April – 2 May 2026 | 71 |
+
+Remaining interruptions are 1,464 single-hour dropouts, median length one hour,
+maximum 22. Routine sampling loss. Hourly verification scores each hour
+independently, so the cost is confined to persistence pairs where the matching
+prior-day hour is absent.
+
+### A3.2 Seasonal imbalance — declared
+
+Coverage pooled by calendar month across years:
+
+| Months | Coverage |
+|---|---|
+| May–September | 83–90% |
+| January, February | ~60% |
+| October | 63% |
+| April | 52% |
+| November, December | 45% |
+| March | 42% |
+
+The six-month outage spanned October to April, so the dry season is covered at
+roughly half the wet-season rate and the 2025 dry season is absent entirely. Two
+dry seasons are represented rather than three.
+
+**Reporting rules, per the approval:**
+
+- Every table states its verification window and sample size.
+- Seasonal results are reported where the sample supports them.
+- **No pooled score is presented as equally representative of all seasons.**
+- Any cross-variable comparison states the relevant windows and samples, since
+  irradiance and the SYNOP variables rest on different periods.
+
+### A3.3 Terminology — binding
+
+Three layers, kept distinct in every document and figure:
+
+| Term | What it is |
+|---|---|
+| **Observational reference** | Barbados Cloud Observatory; BMS SYNOP. Measured. |
+| **Reanalysis** | ERA5. A model product assimilating observations after the fact. |
+| **Forecast** | The thing under test. |
+
+**None is described as ground truth.**
+
+### A3.4 Baseline — revised
+
+§7 specifies plain persistence. For irradiance that is too weak a standard:
+anything encoding solar geometry beats it trivially.
+
+**Irradiance baseline is smart persistence on the clear-sky index** — assume
+today's ratio of observed to clear-sky irradiance holds at the same hour
+tomorrow. This is the solar-forecasting standard and is genuinely hard to beat.
+
+Naive persistence is retained and reported alongside, so the comparison answers
+"better than what" with both.
+
+Skill is reported against smart persistence. A variable that fails to beat it at
+a given lead time is reported as not useful at that lead time, whatever its
+absolute error.
+
+### A3.5 Rainfall metrics — added
+
+RMSE on an intermittent variable that is zero most hours conceals more than it
+shows. Rainfall is additionally verified categorically: **hit rate and false
+alarm ratio** against a stated threshold, reported alongside the continuous
+metrics.
+
+### A3.6 Grid-cell selection — to be tested, not assumed
+
+Open-Meteo's `cell_selection` defaults to `land`, which selects a land cell of
+similar elevation using a 90 m DEM. On a small island that can draw a value from
+a cell that does not represent the site.
+
+`land`, `sea` and `nearest` are each scored against observations before the
+choice is fixed. The selected option and its justification are recorded.
+
+### A3.7 Conditional error analysis — added
+
+Beyond aggregate skill:
+
+- **Cloudy versus clear days**, separately.
+- **09:00–17:00 versus overnight.** A defensible solar-elevation definition is
+  used for the scored irradiance window; the fixed UTC hours serve as a coarse
+  diagnostic only.
+
+This addresses the operational failure that prompted the engagement: a forecast
+that cannot anticipate cloud passing at 2pm.
+
+### A3.8 Irradiance verification layer — resolved
+
+§4.2 records that irradiance could not be verified locally because SYNOP carries
+no radiation fields. **That limitation is now closed.**
+
+The Barbados Cloud Observatory at Ragged Point (13.16°N, 59.43°W, 17 m) publishes
+GHI, DNI and DHI from Kipp & Zonen instruments on a SOLYS2 tracker, calibrated by
+DWD Lindenberg, at one-second resolution from April 2015. Pre-aggregated hourly,
+ten-minute, one-minute and daily products are served from the same catalogue; the
+hourly store is used.
+
+**Corrections to the reference as given:** the dataset is named `radiation`, not
+`radiation_l2`. Variables are `sw_down_global` (GHI), `sw_down_suntracker` (DNI)
+and `sw_down_diffuse` (DHI), in W/m². A `raw_count` field gives the number of
+one-second samples behind each hourly value and is the basis of the completeness
+threshold in A3.1.
+
+**Licence: unconfirmed.** CC0 has been stated but is not declared in the
+catalogue or in the dataset attributes. Mottley Consulting is confirming terms
+and attribution with MPI-Met directly. **No result is published until that is
+settled.**
+
+**Retained caveats:** the Observatory is a single windward-coast point,
+representative of the incoming air mass rather than the whole island; and the
+Level 2 product is flagged as under test in the documentation, so values are
+cross-checked against Level 1 before reliance.
+
+### A3.9 Out of scope
+
+**Ensemble reliability is not assessed in this phase.** Individual members are
+retained for three days and the mean-and-spread archive begins March 2026.
+Neither supports a backtest over the frozen window. No probabilistic skill result
+is offered.
+
+### A3.10 What proceeds
+
+Skill curves at lead days one to seven, per variable, unblended. Smart-persistence
+and naive-persistence baselines. Conditional error analysis per A3.7. The
+representativeness comparison between Observatory GHI and reanalysis at the grid
+cell. The operational assessment in §10, extended to document Solcast and
+Weatherbit against the nine standards whether or not they are tested.
+
+Every model named. No `best_match`. Provenance preserved on every row.
