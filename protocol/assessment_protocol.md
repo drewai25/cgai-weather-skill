@@ -4,7 +4,7 @@
 **Prepared for:** Barbados Light & Power Company Ltd., via Mottley Consulting Inc.
 **Author:** Andrew Narine, CaribbeanGridAI
 **Status:** Frozen prior to forecast data acquisition
-**Version:** 1.1 — data sources established
+**Version:** 1.1 + Amendments 1-4 (A4 proposed, awaiting sign-off)
 
 ---
 
@@ -620,8 +620,6 @@ cell. The operational assessment in §10, extended to document Solcast and
 Weatherbit against the nine standards whether or not they are tested.
 
 Every model named. No `best_match`. Provenance preserved on every row.
-
----
 
 ---
 
