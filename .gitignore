@@ -13,3 +13,7 @@ __pycache__/
 
 # bulk forecast data, not evidence
 data/forecasts/
+
+data/latency/
+
+data/latency/
