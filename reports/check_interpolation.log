@@ -1,0 +1,54 @@
+Point 13.07333, -59.5   date 2025-06-15   (hourly values, UTC)
+
+==============================================================================
+temperature_2m
+==============================================================================
+ecmwf_ifs025 L1              24/24 non-null   max dev vs 3h-linear 0.133333   vs 6h-linear 0.800000
+                             -> native hourly (no linear signature)
+                                first 12: 26.1, 26.3, 26.6, 26.7, 26.7, 26.5, 26.3, 26, 25.7, 25.6, 25.8, 26.2
+ecmwf_ifs025 L7              24/24 non-null   max dev vs 3h-linear 0.100000   vs 6h-linear 0.450000
+                             -> native hourly (no linear signature)
+                                first 12: 27, 27, 26.9, 26.9, 26.8, 26.8, 26.8, 26.7, 26.5, 26.5, 26.6, 26.9
+ecmwf_ifs_hres L1            unavailable — HTTP 400: {"reason":"Invalid value: Cannot initialize MultiDomains from invalid String value ecmwf_ifs_hres","error":true}
+ecmwf_ifs_hres L7            unavailable — HTTP 400: {"error":true,"reason":"Invalid value: Cannot initialize MultiDomains from invalid String value ecmwf_ifs_hres"}
+ecmwf_ifs04 L1               0/24 non-null   max dev vs 3h-linear    n/a   vs 6h-linear    n/a
+                             -> native hourly (no linear signature)
+                                first 12: null, null, null, null, null, null, null, null, null, null, null, null
+ecmwf_ifs04 L7               0/24 non-null   max dev vs 3h-linear    n/a   vs 6h-linear    n/a
+                             -> native hourly (no linear signature)
+                                first 12: null, null, null, null, null, null, null, null, null, null, null, null
+gfs_seamless L1              24/24 non-null   max dev vs 3h-linear 0.533333   vs 6h-linear 1.200000
+                             -> native hourly (no linear signature)
+                                first 12: 26.5, 26, 25.8, 25.9, 26.3, 25.9, 26, 25.9, 25.8, 26.2, 26.4, 27.2
+gfs_seamless L7              24/24 non-null   max dev vs 3h-linear 0.633333   vs 6h-linear 1.000000
+                             -> native hourly (no linear signature)
+                                first 12: 26.6, 26.5, 26.4, 26.4, 26.4, 26.4, 26.2, 26.1, 25.9, 26, 26.5, 27.3
+
+==============================================================================
+shortwave_radiation
+==============================================================================
+ecmwf_ifs025 L1              24/24 non-null   max dev vs 3h-linear 94.000000   vs 6h-linear 241.000000
+                             -> native hourly (no linear signature)
+                                first 12: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 146
+ecmwf_ifs025 L7              24/24 non-null   max dev vs 3h-linear 94.000000   vs 6h-linear 189.000000
+                             -> native hourly (no linear signature)
+                                first 12: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 12, 129
+ecmwf_ifs_hres L1            unavailable — HTTP 400: {"reason":"Invalid value: Cannot initialize MultiDomains from invalid String value ecmwf_ifs_hres","error":true}
+ecmwf_ifs_hres L7            unavailable — HTTP 400: {"reason":"Invalid value: Cannot initialize MultiDomains from invalid String value ecmwf_ifs_hres","error":true}
+ecmwf_ifs04 L1               0/24 non-null   max dev vs 3h-linear    n/a   vs 6h-linear    n/a
+                             -> native hourly (no linear signature)
+                                first 12: null, null, null, null, null, null, null, null, null, null, null, null
+ecmwf_ifs04 L7               0/24 non-null   max dev vs 3h-linear    n/a   vs 6h-linear    n/a
+                             -> native hourly (no linear signature)
+                                first 12: null, null, null, null, null, null, null, null, null, null, null, null
+gfs_seamless L1              24/24 non-null   max dev vs 3h-linear 123.000000   vs 6h-linear 259.000000
+                             -> native hourly (no linear signature)
+                                first 12: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 157
+gfs_seamless L7              24/24 non-null   max dev vs 3h-linear 67.333333   vs 6h-linear 300.000000
+                             -> native hourly (no linear signature)
+                                first 12: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 32, 167
+
+Reading it: a max deviation at or near zero means every in-between
+value lies exactly on the line joining its anchors, which only
+happens when something drew that line. gfs_seamless is the control;
+if it also reads INTERPOLATED, distrust the test, not the archive.

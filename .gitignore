@@ -17,3 +17,4 @@ data/forecasts/
 data/latency/
 
 data/latency/
+reports/latency_collector.log
