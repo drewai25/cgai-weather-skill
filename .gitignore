@@ -10,3 +10,6 @@ __pycache__/
 !data/raw/archive_start_by_model.csv
 !data/raw/archive_variable_matrix.csv
 !data/raw/effective_window_by_variable_lead.csv
+
+# bulk forecast data, not evidence
+data/forecasts/
