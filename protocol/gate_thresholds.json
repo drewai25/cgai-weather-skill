@@ -1,0 +1,42 @@
+{
+  "_what_this_is": "Numeric gates for the outcome narratives. Set before any skill number existed. Proposed by Andrew Narine, pending sign-off by Tunde Mottley.",
+  "set_at_utc": "2026-10-02T06:50:00Z",
+  "results_seen_when_set": false,
+  "evidence_no_results_existed": "reports/fetch_integrity.log counts rows and reads no values. No join, no metric, no reference data fetched.",
+
+  "_the_metric": {
+    "continuous": "skill score SS = 1 - MAE_forecast / MAE_baseline, per (variable, lead day), against the baseline named in the outcome narratives",
+    "categorical_rainfall": "equitable threat score (ETS) against the base rate, at each threshold in A5.6",
+    "note": "SS of 0 means no better than the baseline. Negative means worse. 1 is perfect."
+  },
+
+  "thresholds": {
+    "X_sufficient": 0.20,
+    "Y_conditional_floor": 0.05,
+    "Z_insufficient": 0.05,
+    "reading": "SS >= X -> Outcome A. Y <= SS < X -> Outcome B. SS < Z -> Outcome C. Y and Z are deliberately the same number so no cell can fall between the bands."
+  },
+
+  "statistical_floor": {
+    "rule": "No cell reaches Outcome A if the bootstrap 95% confidence interval on its skill score includes zero, whatever the point estimate.",
+    "why": "Sample sizes differ by an order of magnitude across cells. A point estimate of 0.25 on 200 pairs is not the same claim as 0.25 on 20,000, and the band alone cannot tell them apart.",
+    "method": "Stationary block bootstrap, block length 24 hours, 1000 resamples. Blocks because hourly forecast errors are autocorrelated and an i.i.d. bootstrap would understate the interval."
+  },
+
+  "_why_these_numbers": {
+    "X_020": "A 20% reduction in error against the naive alternative is large enough to survive dilution downstream. Below that, the gain is likely to disappear once it passes through a load model.",
+    "Y_Z_005": "Close enough to zero that, at realistic sample sizes, it is not reliably distinguishable from no skill at all.",
+    "honest_caveat": "These are not derived from BL&P's requirements. The operationally correct threshold depends on how much load-forecast error BL&P tolerates and how strongly load responds to each variable, neither of which has been supplied. They are assessment thresholds chosen for interpretability and fixed in advance so they cannot be chosen to fit a result."
+  },
+
+  "_what_these_thresholds_do_not_decide": [
+    "Whether BL&P should build the load model. That is their decision and it needs their tolerance, not ours.",
+    "Whether a cell at Outcome B is worth using. B hands the judgement over rather than making it.",
+    "Anything about cloud cover, which per A5.11 is ranked relatively and carries no absolute skill claim."
+  ],
+
+  "sign_off": {
+    "andrew_narine": null,
+    "tunde_mottley": null
+  }
+}

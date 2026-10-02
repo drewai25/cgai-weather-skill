@@ -1,0 +1,82 @@
+nohup: ignoring input
+Point 13.07333, -59.5   cell_selection=land
+Window end 2026-09-30   models 6   variables 6   leads [1, 2, 3, 4, 5, 6, 7]
+
+ecmwf_ifs025  from 2024-02-04  42 variable-lead combinations
+   2024-02-04..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  42 fields ... 91728 rows, 91728 non-null
+   2024-07-01..2024-09-30  42 fields ... 92736 rows, 92736 non-null
+   2024-10-01..2024-12-31  42 fields ... 92736 rows, 92736 non-null
+   2025-01-01..2025-03-31  42 fields ... 90720 rows, 90720 non-null
+   2025-04-01..2025-06-30  42 fields ... 91728 rows, 91728 non-null
+   2025-07-01..2025-09-30  42 fields ... 92736 rows, 92736 non-null
+   2025-10-01..2025-12-31  42 fields ... 92736 rows, 92736 non-null
+   2026-01-01..2026-03-31  42 fields ... 90720 rows, 90720 non-null
+   2026-04-01..2026-06-30  42 fields ... 91728 rows, 91212 non-null
+   2026-07-01..2026-09-30  42 fields ...       retry 1/4 in 1s — URLError: <urlopen error _ssl.c:983: The handshake operation timed out>
+92736 rows, 92736 non-null
+gfs_seamless  from 2023-12-02  42 variable-lead combinations
+   2023-12-02..2023-12-31  already present, skipped
+   2024-01-01..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  42 fields ... 91728 rows, 91728 non-null
+   2024-07-01..2024-09-30  42 fields ... 92736 rows, 92736 non-null
+   2024-10-01..2024-12-31  42 fields ... 92736 rows, 92736 non-null
+   2025-01-01..2025-03-31  42 fields ... 90720 rows, 90720 non-null
+   2025-04-01..2025-06-30  42 fields ... 91728 rows, 91728 non-null
+   2025-07-01..2025-09-30  42 fields ... 92736 rows, 92736 non-null
+   2025-10-01..2025-12-31  42 fields ... 92736 rows, 92736 non-null
+   2026-01-01..2026-03-31  42 fields ... 90720 rows, 90720 non-null
+   2026-04-01..2026-06-30  42 fields ... 91728 rows, 91467 non-null
+   2026-07-01..2026-09-30  42 fields ... 92736 rows, 92736 non-null
+icon_seamless  from 2024-01-20  36 variable-lead combinations
+   2024-01-20..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  36 fields ... 78624 rows, 78624 non-null
+   2024-07-01..2024-09-30  36 fields ... 79488 rows, 79488 non-null
+   2024-10-01..2024-12-31  36 fields ... 79488 rows, 79488 non-null
+   2025-01-01..2025-03-31  36 fields ... 77760 rows, 77760 non-null
+   2025-04-01..2025-06-30  36 fields ... 78624 rows, 78624 non-null
+   2025-07-01..2025-09-30  36 fields ... 79488 rows, 79488 non-null
+   2025-10-01..2025-12-31  36 fields ... 79488 rows, 79488 non-null
+   2026-01-01..2026-03-31  36 fields ... 77760 rows, 77760 non-null
+   2026-04-01..2026-06-30  36 fields ... 78624 rows, 77007 non-null
+   2026-07-01..2026-09-30  36 fields ... 79488 rows, 79488 non-null
+gem_seamless  from 2024-01-20  42 variable-lead combinations
+   2024-01-20..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  42 fields ... 91728 rows, 91728 non-null
+   2024-07-01..2024-09-30  42 fields ... 92736 rows, 92736 non-null
+   2024-10-01..2024-12-31  42 fields ... 92736 rows, 92736 non-null
+   2025-01-01..2025-03-31  42 fields ... 90720 rows, 90720 non-null
+   2025-04-01..2025-06-30  42 fields ... 91728 rows, 91728 non-null
+   2025-07-01..2025-09-30  42 fields ... 92736 rows, 92736 non-null
+   2025-10-01..2025-12-31  42 fields ... 92736 rows, 92736 non-null
+   2026-01-01..2026-03-31  42 fields ... 90720 rows, 90720 non-null
+   2026-04-01..2026-06-30  42 fields ... 91728 rows, 88511 non-null
+   2026-07-01..2026-09-30  42 fields ... 92736 rows, 92736 non-null
+meteofrance_seamless  from 2024-01-20  18 variable-lead combinations
+   2024-01-20..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  18 fields ... 39312 rows, 39312 non-null
+   2024-07-01..2024-09-30  18 fields ... 39744 rows, 39744 non-null
+   2024-10-01..2024-12-31  18 fields ... 39744 rows, 39744 non-null
+   2025-01-01..2025-03-31  18 fields ... 38880 rows, 38880 non-null
+   2025-04-01..2025-06-30  18 fields ... 39312 rows, 39312 non-null
+   2025-07-01..2025-09-30  18 fields ... 39744 rows, 39744 non-null
+   2025-10-01..2025-12-31  18 fields ... 39744 rows, 39744 non-null
+   2026-01-01..2026-03-31  18 fields ... 38880 rows, 38850 non-null
+   2026-04-01..2026-06-30  18 fields ... 39312 rows, 38600 non-null
+   2026-07-01..2026-09-30  18 fields ... 39744 rows, 39744 non-null
+jma_seamless  from 2023-12-02  21 variable-lead combinations
+   2023-12-02..2023-12-31  already present, skipped
+   2024-01-01..2024-03-31  already present, skipped
+   2024-04-01..2024-06-30  21 fields ... 45864 rows, 45864 non-null
+   2024-07-01..2024-09-30  21 fields ... 46368 rows, 46368 non-null
+   2024-10-01..2024-12-31  21 fields ... 46368 rows, 46368 non-null
+   2025-01-01..2025-03-31  21 fields ... 45360 rows, 45360 non-null
+   2025-04-01..2025-06-30  21 fields ... 45864 rows, 45864 non-null
+   2025-07-01..2025-09-30  21 fields ... 46368 rows, 46368 non-null
+   2025-10-01..2025-12-31  21 fields ... 46368 rows, 46368 non-null
+   2026-01-01..2026-03-31  21 fields ... 45360 rows, 45360 non-null
+   2026-04-01..2026-06-30  21 fields ... 45864 rows, 43320 non-null
+   2026-07-01..2026-09-30  21 fields ... 46368 rows, 46368 non-null
+
+Wrote 4404312 new rows under data/forecasts
+Re-run to retry any chunk that failed; existing chunks are skipped.
