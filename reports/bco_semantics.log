@@ -1,0 +1,26 @@
+=== O5: what interval does a timestamp cover? ===
+  stamp 2024-09-01T00:05:00   bounds 2024-09-01T00:00:00 .. 2024-09-01T00:10:00   raw_count 600
+  stamp 2024-09-01T00:15:00   bounds 2024-09-01T00:10:00 .. 2024-09-01T00:20:00   raw_count 596
+  stamp 2024-09-01T00:25:00   bounds 2024-09-01T00:20:00 .. 2024-09-01T00:30:00   raw_count 588
+  stamp 2024-09-01T00:35:00   bounds 2024-09-01T00:30:00 .. 2024-09-01T00:40:00   raw_count 589
+  stamp 2024-09-01T00:45:00   bounds 2024-09-01T00:40:00 .. 2024-09-01T00:50:00   raw_count 598
+  stamp 2024-09-01T00:55:00   bounds 2024-09-01T00:50:00 .. 2024-09-01T01:00:00   raw_count 600
+
+=== O3: raw_count across the whole record ===
+  n            604421
+  min / max    0.0 / 600.0
+  exceeds 600  0
+  equals 600   339183
+  nan          0
+  p0    0
+  p1    0
+  p5    0
+  p25   582
+  p50   600
+  p75   600
+  p99   600
+  p100  600
+
+=== coverage inside the frozen window ===
+  10-min records present: 143856
+  expected if complete:   143856

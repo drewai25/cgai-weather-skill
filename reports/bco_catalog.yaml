@@ -1,0 +1,1525 @@
+sources:
+  HATPRO_BRT:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.HATPRO_BRT_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - dfab87f
+        - main
+        - 67c3872
+        default: dfab87f
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  HATPRO_HKD:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.HATPRO_HKD_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - dfab87f
+        - main
+        - 67c3872
+        default: dfab87f
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  HATPRO_IWV:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.HATPRO_IWV_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - 67c3872
+        default: 67c3872
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  bucket_WAD_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.bucket_WAD_c1_v1.zarr/
+    description: OTT WAD 200 installed at BCO
+    driver: zarr
+  ceilometer_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.ceilometer_c1_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 194ce09
+        - 46ab43c
+        default: 194ce09
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  ceilometer_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.ceilometer_c1_v1.zarr
+    description: Ceilometer data from BCO
+    driver: zarr
+  ceilometer_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.ceilometer_c2_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 194ce09
+        - 46ab43c
+        default: 194ce09
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  ceilometer_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.ceilometer_c2_v1.zarr
+    description: Ceilometer data from BCO
+    driver: zarr
+  ceilometer_c3:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.ceilometer_c3_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - f3fe966
+        default: f3fe966
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  cloudradar:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.cloudradar_{{
+        rev }}_{{ build }}{% if time != 'raw' %}_{{ time }}{% endif %}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: Build number of dataset for given revision or branch
+        type: int
+      rev:
+        allowed:
+        - x6465ad
+        - 3c9a772
+        default: 3c9a772
+        description: Revision or branch of code used to produce dataset
+        type: str
+      time:
+        allowed:
+        - P1D
+        - PT1H
+        - PT10M
+        - PT1M
+        - raw
+        default: raw
+        description: dt of time axis
+        type: str
+  coral_app_hr:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.coral_app_hr_{{
+        rev }}_{{ build }}.zarr
+    description: Raman Lidar CORAL, high resolution APP data
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - ee6f0da
+        default: ee6f0da
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  coral_app_lr:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.coral_app_lr_{{
+        rev }}_{{ build }}.zarr
+    description: Raman Lidar CORAL, low resolution APP data
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - f3fe966
+        default: f3fe966
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  dewpoint:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.dewpoint_{{
+        rev }}_{{ build }}.zarr
+    description: VTP 6 dew point, air temperature, and relative humidity measurements
+      at the BCO
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 2416af7
+        - main
+        - 9b77b3c
+        default: 9b77b3c
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c1_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 300m-8km range, 96% scanning
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c2_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 150m-15km range, 55% staring
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c3:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c3_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 155m-15km range, scanning
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c4:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c4_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 300m-15.2km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 9871e73
+        - main
+        - 3c9a772
+        default: 9871e73
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c5:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c5_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 150m-7.6km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c6:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c6_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 150m-4km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  katrin_c7:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.katrin_c7_{{
+        rev }}_{{ build }}.zarr
+    description: KATRIN polarised 35.5 GHz Doppler radar, 144m-12.9km range, scanning
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - 3c9a772
+        - main
+        - eef8984
+        - 683485c
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  lidar_CORAL_LR_b_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_CORAL_LR_b_c1_v1.zarr/
+    description: "Raman lidar CORAL, 60min temperature averaging, 2min smoothing,\
+      \ 2min interval, 2019-01-21 \u2026 2023-03-17"
+    driver: zarr
+  lidar_CORAL_LR_t_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_CORAL_LR_t_c1_v1.zarr/
+    description: "Raman lidar CORAL, 60min temperature averaging, 60min smoothing,\
+      \ 2min interval, 2019-01-21 \u2026 2023-03-17"
+    driver: zarr
+  lidar_CORAL_calib_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_calib_v1.zarr
+    description: time-varying and self-dependent calibration constants for LIDAR processing
+    driver: zarr
+  lidar_CORAL_hr_f_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_hr_f_c1_v{{
+        version }}.zarr/
+    description: high resolution CORAL LIDAR data processed to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_CORAL_hr_s_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_hr_s_c1_v{{
+        version }}.zarr/
+    description: high resolution CORAL LIDAR data processed to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_CORAL_lowres_calib_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_lowres_calib_v1.zarr/
+    description: CORAL LIDAR calibration constants
+    driver: zarr
+  lidar_CORAL_lr_f_reanalysis_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_lr_f_reanalysis_c1_v{{
+        version }}.zarr/
+    description: low resolution CORAL LIDAR data processed with "rolling" and future
+      (3 days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_CORAL_lr_f_rolling_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_lr_f_rolling_c1_v{{
+        version }}.zarr/
+    description: low resolution CORAL LIDAR data processed with current and past (3
+      days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_CORAL_lr_s_reanalysis_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_lr_s_reanalysis_c1_v{{
+        version }}.zarr/
+    description: low resolution CORAL LIDAR data processed with "rolling" and future
+      (3 days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_CORAL_lr_s_rolling_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_CORAL_lr_s_rolling_c1_v{{
+        version }}.zarr/
+    description: low resolution CORAL LIDAR data processed with current and past (3
+      days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_EARLI_LR_b_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_b_c1_v1.zarr/
+    description: "Raman lidar EARLI, 2min smoothing, 2min interval, 20m-15km range,\
+      \ 2010-04-07 \u2026 2012-04-01"
+    driver: zarr
+  lidar_EARLI_LR_b_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_b_c2_v1.zarr/
+    description: "Raman lidar EARLI, 2min smoothing, 2min interval, 20m-15km range,\
+      \ 2010-04-07 \u2026 2014-09-23"
+    driver: zarr
+  lidar_EARLI_LR_b_c3_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_b_c3_v1.zarr/
+    description: "Raman lidar EARLI, 2min smoothing, 2min interval, 20m-15km range,\
+      \ 2011-04-01 \u2026 2015-04-26"
+    driver: zarr
+  lidar_EARLI_LR_e_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_e_c1_v1.zarr/
+    description: "Raman lidar EARLI, 60min smoothing, 2min interval, 20m-15km range,\
+      \ 2011-04-09 \u2026 2012-04-01"
+    driver: zarr
+  lidar_EARLI_LR_e_c3_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_e_c3_v1.zarr/
+    description: "Raman lidar EARLI, 60min smoothing, 2min interval, 20m-15km range,\
+      \ 2011-04-01 \u2026 2015-04-26"
+    driver: zarr
+  lidar_EARLI_LR_t_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_EARLI_LR_t_c1_v1.zarr/
+    description: "Raman lidar EARLI, 118min smoothing, 2min interval, 20m-15km range,\
+      \ 2011-04-07 \u2026 2012-03-27"
+    driver: zarr
+  lidar_LICHT_LR_b_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_LICHT_LR_b_c1_v1.zarr/
+    description: "Raman lidar LICHT, 118min temperature averaging, 2min smoothing,\
+      \ 2min interval, 20m-15km range, 2016-07-17 \u2026 2017-06-13"
+    driver: zarr
+  lidar_LICHT_LR_b_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_LICHT_LR_b_c2_v1.zarr/
+    description: "Raman lidar LICHT, 118min temperature averaging, 2min smoothing,\
+      \ 2min interval, 20m-29km range, 2017-06-17 \u2026 2017-06-13"
+    driver: zarr
+  lidar_LICHT_LR_t_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_LICHT_LR_t_c1_v1.zarr/
+    description: "Raman lidar LICHT, 118min temperature averaging, 118min smoothing,\
+      \ 2min interval, 20m-15km range, 2016-07-17 \u2026 2017-06-13"
+    driver: zarr
+  lidar_LICHT_LR_t_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.lidar_LICHT_LR_t_c2_v1.zarr/
+    description: "Raman lidar LICHT, 118min temperature averaging, 118min smoothing,\
+      \ 2min interval, 20m-29km range, 2017-06-17 \u2026 2019-12-06"
+    driver: zarr
+  lidar_LICHT_calib:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_calib_v{{
+        version }}.zarr/
+    description: time-varying and self-dependent calibration constants for LIDAR processing
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_f_reanalysis_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_f_reanalysis_c1_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with "rolling" and future
+      (3 days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_f_reanalysis_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_f_reanalysis_c2_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with "rolling" and future
+      (3 days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_f_rolling_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_f_rolling_c1_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with current and past (3
+      days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_f_rolling_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_f_rolling_c2_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with current and past (3
+      days) calibrations to fast product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_s_reanalysis_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_s_reanalysis_c1_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with "rolling" and future
+      (3 days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_s_reanalysis_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_s_reanalysis_c2_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with "rolling" and future
+      (3 days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_s_rolling_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_s_rolling_c1_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with current and past (3
+      days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  lidar_LICHT_lr_s_rolling_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.lidar_LICHT_lr_s_rolling_c2_v{{
+        version }}.zarr/
+    description: low resolution LICHT LIDAR data processed with current and past (3
+      days) calibrations to slow product
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  mbr2_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mbr2_c1_{{
+        rev }}_{{ build }}.zarr
+    description: MBR2 polarised 35.5 GHz Doppler radar, 10s timestep, 155m-14km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mbr2_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mbr2_c2_{{
+        rev }}_{{ build }}.zarr
+    description: MBR2 polarised 35.5 GHz Doppler radar, 10s timestep, 155m-25km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mbr2_c3:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mbr2_c3_{{
+        rev }}_{{ build }}.zarr
+    description: MBR2 polarised 35.5 GHz Doppler radar, 10s timestep, 155m-18km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mbr2_c4:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mbr2_c4_{{
+        rev }}_{{ build }}.zarr
+    description: MBR2 polarised 35.5 GHz Doppler radar, 2s timestep, 155m-18km range
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mbrs:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mbrs_{{
+        rev }}_{{ build }}.zarr
+    description: MBRS polarised 35.5 GHz Doppler radar
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 644a6f5
+        - main
+        - 3c9a772
+        default: 644a6f5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mrr:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mrr_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - ae78268
+        default: ae78268
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  mrrpro:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.mrrpro_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - b972f2d
+        default: b972f2d
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  parsivel_451995:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.parsivel_451995_{{
+        rev }}_{{ build }}.zarr
+    description: Level 1 data from eastward facing disdrometer at BCO
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 2
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - ed74299
+        default: ed74299
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  parsivel_451996:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.parsivel_451996_{{
+        rev }}_{{ build }}.zarr
+    description: Level 1 data from northward facing disdrometer at BCO
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 2
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - ed74299
+        default: ed74299
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  parsivel_451997:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.parsivel_451997_{{
+        rev }}_{{ build }}.zarr
+    description: Level 1 data from eastward facing disdrometer at BCO
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - ed74299
+        default: ed74299
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  radar_KATRIN_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radar_KATRIN_c1_v{{
+        version }}.zarr/
+    description: "cloud radar KATRIN, 1s interval, 300m-8km range, 2010-12-13 \u2026\
+      \ 2018-04-19"
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  radar_MBR2_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.radar_MBR2_c1_v1.zarr/
+    description: "cloud radar MBR2, 10s interval, 155m-14km range, 2015-06-05 \u2026\
+      \ 2016-06-01"
+    driver: zarr
+  radar_MBR2_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.radar_MBR2_c2_v1.zarr/
+    description: "cloud radar MBR2, 10s interval, 155m-25km range, 2016-06-02 \u2026\
+      \ 2018-04-18"
+    driver: zarr
+  radar_MBR2_c3_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.radar_MBR2_c3_v1.zarr/
+    description: "cloud radar MBR2, 10s interval, 155m-18km range, 2018-04-19 \u2026\
+      \ 2018-04-29"
+    driver: zarr
+  radar_MBR2_c4_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.radar_MBR2_c4_v1.zarr/
+    description: "cloud radar MBR2, 2s interval, 155m-18km range, 2018-04-30 \u2026\
+      \ today"
+    driver: zarr
+  radar_MBRS_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/BCOpublic/BCO.radar_MBRS_c1_v1.zarr/
+    description: "cloud radar MBRS, 2s interval, 155m-18km range, 2022-12-04 \u2026\
+      \ today"
+    driver: zarr
+  radiation:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_{{
+        rev }}_{{ build }}{% if time != 'raw' %}_{{ time }}{% endif %}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: Build number of dataset for given revision or branch
+        type: int
+      rev:
+        allowed:
+        - x255960
+        - x790cdf
+        default: x255960
+        description: Revision or branch of code used to produce dataset
+        type: str
+      time:
+        allowed:
+        - P1D
+        - PT1H
+        - PT10M
+        - PT1M
+        - raw
+        default: raw
+        description: dt of time axis
+        type: str
+  radiation_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_c1_{{
+        rev }}_{{ build }}.zarr
+    description: SW and LW radiative fluxes at BCO (level 1)
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - eaa77b4
+        - main
+        - 08e20c5
+        default: 08e20c5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  radiation_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_c2_{{
+        rev }}_{{ build }}.zarr
+    description: SW and LW radiative fluxes at BCO (level 1, with voltage and sensitivity
+      fields)
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - eaa77b4
+        - main
+        - 08e20c5
+        default: 08e20c5
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  radiation_l2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_l2_{{
+        rev }}_{{ build }}.zarr
+    description: SW and LW radiative fluxes from BCO (level 2)
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - f62cdee
+        default: f62cdee
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  radiometer_HATPRO_BRT_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiometer_HATPRO_BRT_c1_v1.zarr
+    description: HATPRO brightness temperature (BRT) data at BCO
+    driver: zarr
+  radiometer_HATPRO_HKD_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiometer_HATPRO_HKD_c1_v1.zarr
+    description: HATPRO housekeeping (HKD) data at BCO
+    driver: zarr
+  radiometer_HATPRO_IWV_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiometer_HATPRO_IWV_c1_v1.zarr
+    description: HATPRO integrated water vapor (IWV) retrieval at BCO
+    driver: zarr
+  raingauge:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.raingauge_{{
+        rev }}_{{ build }}.zarr
+    description: Ott WAD200 rain gauge
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 1
+        - 2
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - 90e110c
+        default: 90e110c
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  surfacemet:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet_{{
+        rev }}_{{ build }}{% if time != 'raw' %}_{{ time }}{% endif %}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 3
+        default: 0
+        description: Build number of dataset for given revision or branch
+        type: int
+      rev:
+        allowed:
+        - x95fbb5
+        - xdcc7a5
+        - 2416af7
+        default: x95fbb5
+        description: Revision or branch of code used to produce dataset
+        type: str
+      time:
+        allowed:
+        - P1D
+        - PT1H
+        - PT10M
+        - PT1M
+        - raw
+        default: raw
+        description: dt of time axis
+        type: str
+  surfacemet2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet2_{{
+        rev }}_{{ build }}{% if time != 'raw' %}_{{ time }}{% endif %}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        - 2
+        default: 0
+        description: Build number of dataset for given revision or branch
+        type: int
+      rev:
+        allowed:
+        - 9bb2db5
+        - x28e957
+        - x703454
+        default: 9bb2db5
+        description: Revision or branch of code used to produce dataset
+        type: str
+      time:
+        allowed:
+        - P1D
+        - PT1H
+        - PT10M
+        - PT1M
+        - raw
+        default: raw
+        description: dt of time axis
+        type: str
+  surfacemet_hc2a:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet_hc2a_{{
+        rev }}_{{ build }}.zarr
+    description: Rotronic HC2A-S3 dew point, air temperature, and relative humidity
+      measurements at the BCO
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 2416af7
+        - main
+        - 1d9acd9
+        default: 1d9acd9
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  surfacemet_hc2a_l2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet_hc2a_l2_{{
+        rev }}_{{ build }}{% if time != 'raw' %}_{{ time }}{% endif %}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: Build number of dataset for given revision or branch
+        type: int
+      rev:
+        allowed:
+        - 2416af7
+        - x8ad7f9
+        - x369ab0
+        default: x8ad7f9
+        description: Revision or branch of code used to produce dataset
+        type: str
+      time:
+        allowed:
+        - P1D
+        - PT1H
+        - PT10M
+        - PT1M
+        - raw
+        default: raw
+        description: dt of time axis
+        type: str
+  surfacemet_lidar:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet_lidar_{{
+        rev }}_{{ build }}.zarr
+    description: Level 1 data from WXT mounted on Raman LIDARs at BCO.
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 1c812d7
+        - 6cdb748
+        - main
+        - 9bb2db5
+        - 99decb4
+        default: 99decb4
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  surfacemet_wxt_lidar:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.surfacemet_wxt_lidar_v{{
+        version }}.zarr/
+    description: 2m Meteorology from WXT-2 ground station attached to lidar
+    driver: zarr
+    parameters:
+      version:
+        allowed:
+        - 1
+        default: 1
+        description: revision of the processed dataset
+        type: int
+  verticalwind:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.verticalwind_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - d4f3d45
+        default: d4f3d45
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar1_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c1_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar1_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c1_v1.zarr/
+    description: Halo Photonics Stream Line Pro Scanning Doppler Lidar installed at
+      BCO
+    driver: zarr
+  windlidar1_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c2_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar1_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c2_v1.zarr/
+    description: Halo Photonics Stream Line Pro Scanning Doppler Lidar installed at
+      BCO
+    driver: zarr
+  windlidar1_c3:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c3_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar1_c3_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_c3_v1.zarr/
+    description: Halo Photonics Stream Line Pro Scanning Doppler Lidar installed at
+      BCO
+    driver: zarr
+  windlidar1_config:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar1_config_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar2_c1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar2_c1_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar2_c1_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar2_c1_v1.zarr/
+    description: Halo Photonics Stream Line Pro Scanning Doppler Lidar installed at
+      BCO
+    driver: zarr
+  windlidar2_c2:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar2_c2_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  windlidar2_c2_v1:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar2_c2_v1.zarr/
+    description: Halo Photonics Stream Line Pro Scanning Doppler Lidar installed at
+      BCO
+    driver: zarr
+  windlidar2_config:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.windlidar2_config_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - main
+        - af6c0f1
+        default: af6c0f1
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str
+  wxt:
+    args:
+      consolidated: true
+      urlpath: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.wxt_{{
+        rev }}_{{ build }}.zarr
+    driver: zarr
+    parameters:
+      build:
+        allowed:
+        - 0
+        default: 0
+        description: build number of dataset for given processing code and input
+        type: int
+      rev:
+        allowed:
+        - 2416af7
+        - main
+        - c73c6dd
+        default: c73c6dd
+        description: dataset revision (beginning with x if hash of self and inputs,
+          otherwise same as processing code revision)
+        type: str

@@ -1,0 +1,6 @@
+L1 c2: 324391785 records, 2015-10-15T00:00:00.000000 .. 2026-10-01T23:59:59.000000
+chunks: (16000000,)
+  2024-04:   2583809 L1 records,   2583809 finite SWD_global (100.0%)  status [3]  set [2]
+  2024-12:   2658057 L1 records,   2658057 finite SWD_global (100.0%)  status [3]  set [3]
+  2025-02:   2395716 L1 records,   2395716 finite SWD_global (100.0%)  status [3]  set [3]
+  2025-06:   2455113 L1 records,   2455113 finite SWD_global (100.0%)  status [0]  set [2 4]

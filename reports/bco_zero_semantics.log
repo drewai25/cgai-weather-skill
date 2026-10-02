@@ -1,0 +1,22 @@
+=== bins where raw_count == 0 ===
+  count 34670  (24.1%)
+  sw_down_global       nan   34670   exactly 0.0       0   other       0
+  sw_down_diffuse      nan   34670   exactly 0.0       0   other       0
+  sw_down_suntracker   nan   34670   exactly 0.0       0   other       0
+
+=== bins where raw_count > 0 ===
+  sw_down_global       nan       0   finite  109186
+  sw_down_diffuse      nan       0   finite  109186
+  sw_down_suntracker   nan       0   finite  109186
+
+=== partial bins: is the mean still trustworthy? ===
+  raw_count   1-60   bins      24  finite      24  nan       0
+  raw_count  60-300  bins    1733  finite    1733  nan       0
+  raw_count 300-599  bins   17972  finite   17972  nan       0
+  raw_count 599-601  bins   89457  finite   89457  nan       0
+
+=== rough daylight share of passing hours ===
+  (approximate: solar noon at 13.07N 59.5W is near 16:00 UTC;
+   this is a sanity check, NOT the A5.2 elevation criterion)
+  hours passing 90%:            16435
+  of those, 10:00-22:00 UTC:    8352  (51%)

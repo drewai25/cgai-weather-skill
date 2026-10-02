@@ -1,0 +1,34 @@
+store: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_x255960_0_PT10M.zarr
+time dimension: 604421
+first: 2015-03-30T15:15:00.000000000  last: 2026-09-25T23:55:00.000000000
+
+variables
+  lw_down_diffuse      Longwave downwelling diffuse radiation   surface_downwelling_longwave_flux_in_air W m-2     time: mean
+  raw_count            -                                        -                            -         time: sum
+  sw_down_diffuse      Shortwave downwelling diffuse radiation  surface_diffuse_downwelling_shortwave_flux_in_air W m-2     time: mean
+  sw_down_global       Shortwave downwelling global radiation   surface_downwelling_shortwave_flux_in_air W m-2     time: mean
+  sw_down_suntracker   Shortwave downwelling direct radiation   surface_direct_downwelling_shortwave_flux_in_air W m-2     time: mean
+  time_bounds          -                                        -                            -         -
+  alt                  -                                        -                            -         -
+  lat                  -                                        -                            -         -
+  lon                  -                                        -                            -         -
+  time                 -                                        time                         -         -
+
+raw_count
+  dtype float64  shape (604421,)
+  attrs {'cell_methods': 'time: sum'}
+
+time_bounds present: True
+
+dataset attrs
+  Conventions: CF-1.12
+  _cutoff_date: 2026-09-25T23:55:00.000001000
+  bcoproc_version: 0.0.0.post2256.dev0+3c9a772
+  institution: Max Planck Institute for Meteorology, Hamburg
+  license: CC0-1.0
+  location: The Barbados Cloud Observatory (BCO), Deebles Point, Barbados, West Indies
+  platform: BCO
+  source: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_x255960_0_PT1M.zarr
+  summary: This dataset contains measurements of downwelling shortwave and longwave radiation measurements from sensors mounted on the table of a SOLYS2 sun tracker at the BCO.
+  title: Radiation data from BCO (Level 2)
+  tool_versions: {"Python": "3.14.3 (main, Mar  3 2026, 14:59:53) [Clang 21.1.4 ]", "MarkupSafe": "3.0.3", "wrapt": "2.4.0", "dask": "2026.8.0", "packaging": "26.3", "pandas": "3.0.5", "numpy_groupies": "0.11.3", "num

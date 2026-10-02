@@ -1,0 +1,11 @@
+window indices 240036851 .. 324307636  (84270785 samples)
+
+status runs in the frozen window
+  status 0  2023-12-31 .. 2024-03-13  ~  71.5 days
+  status 3  2024-03-13 .. 2024-05-02  ~  50.5 days
+      GHI sampled 207652  max   1489.2  over 1400 W/m2: 15  nan 0
+  status 0  2024-05-03 .. 2024-07-08  ~  57.6 days
+  status 0  2024-07-08 .. 2024-10-14  ~  95.9 days
+  status 3  2024-10-14 .. 2025-04-06  ~ 173.1 days
+      GHI sampled 202096  max   1451.8  over 1400 W/m2: 1  nan 0
+  status 0  2025-04-07 .. 2026-09-30  ~ 526.8 days

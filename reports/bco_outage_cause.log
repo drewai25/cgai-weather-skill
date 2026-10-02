@@ -1,0 +1,8 @@
+
+L2 PT10M  2015-03-30 15:15:00 .. 2026-09-25 23:55:00   n=604421
+  variables: ['lw_down_diffuse', 'raw_count', 'sw_down_diffuse', 'sw_down_global', 'sw_down_suntracker', 'time_bounds']
+  2024-04:     4320 records,        0 finite sw_down_global (  0.0%)
+  2024-12:     4464 records,        0 finite sw_down_global (  0.0%)
+  2025-02:     4032 records,        0 finite sw_down_global (  0.0%)
+  2025-06:     4320 records,     4160 finite sw_down_global ( 96.3%)
+L1 c2      unavailable -- MemoryError: Unable to allocate 2.42 GiB for an array with shape (324391785,) and data type int64

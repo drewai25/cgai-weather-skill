@@ -1,0 +1,63 @@
+
+================ L1 c2 ================
+dataset attrs:
+  Conventions: CF-1.12
+  _logical_cutoff_date: 2026-10-02T00:00:00Z
+  bcoproc_version: 0.0.0.post2072.dev0+08e20c5
+  featureType: timeSeries
+  institution: Max Planck Institute for Meteorology, Hamburg
+  license: CC0-1.0
+  location: The Barbados Cloud Observatory (BCO), Deebles Point, Barbados, West Indies
+  platform: BCO
+  source: Kipp & Zonen CMP21 (shaded and un-shaded) pyranometer, CGR4 (shaded) pyrgeometer, CHP1 pyrheliometer
+  summary: This dataset contains measurements of downwelling shortwave and longwave radiation measurements         from sensors mounted on the table of a SOLYS2 sun tracker at the BCO.
+  title: Radiation data from BCO (Level 1)
+  tool_versions: {"Python": "3.11.2 (main, Apr 28 2025, 14:11:48) [GCC 12.2.0]", "frozenlist": "1.6.0", "locket": "1.0.0", "dask": "2025.4.1", "ruff": "0.13.0", "cftime": "1.6.4.post1", "netcdf4": "1.7.2", "multidict": "6.4.3", "jinja2":
+
+per-array attrs:
+  LWD_diff                 {'coordinates': 'alt lat lon', 'long_name': 'Longwave downwelling diffuse radiation', 'standard_name': 'surface_downwelling_longwave_flux_in_air', 'units': 'W m-2'}
+  LWD_diff_S               {'coordinates': 'alt lat lon', 'long_name': 'Sensitivity for longwave downwelling diffuse radiation', 'units': 'V m2 W-1'}
+  LWD_diff_T               {'coordinates': 'alt lat lon', 'long_name': 'Housing temperature of shaded pyrgeometer', 'units': 'degree_Celsius'}
+  LWD_diff_V               {'coordinates': 'alt lat lon', 'long_name': 'Voltage measurement for longwave downwelling diffuse radiation', 'units': 'V'}
+  SWD_diff                 {'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling diffuse radiation', 'standard_name': 'surface_diffuse_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  SWD_diff_S               {'coordinates': 'alt lat lon', 'long_name': 'Sensitivity for shortwave downwelling diffuse radiation', 'units': 'V m2 W-1'}
+  SWD_diff_T               {'coordinates': 'alt lat lon', 'long_name': 'Housing temperature of shaded pyranometer', 'units': 'degree_Celsius'}
+  SWD_diff_V               {'coordinates': 'alt lat lon', 'long_name': 'Voltage measurement for shortwave downwelling diffuse radiation', 'units': 'V'}
+  SWD_dir                  {'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling direct radiation', 'standard_name': 'surface_direct_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  SWD_dir_S                {'coordinates': 'alt lat lon', 'long_name': 'Sensitivity for shortwave downwelling direct radiation', 'units': 'V m2 W-1'}
+  SWD_dir_T                {'coordinates': 'alt lat lon', 'long_name': 'Housing temperature of shaded pyrheliometer', 'units': 'degree_Celsius'}
+  SWD_dir_V                {'coordinates': 'alt lat lon', 'long_name': 'Voltage measurement for shortwave downwelling direct radiation', 'units': 'V'}
+  SWD_global               {'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling global radiation', 'standard_name': 'surface_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  SWD_global_S             {'coordinates': 'alt lat lon', 'long_name': 'Sensitivity for shortwave downwelling global radiation', 'units': 'V m2 W-1'}
+  SWD_global_T             {'coordinates': 'alt lat lon', 'long_name': 'Housing temperature of unshaded pyranometer', 'units': 'degree_Celsius'}
+  SWD_global_V             {'coordinates': 'alt lat lon', 'long_name': 'Voltage measurement for shortwave downwelling global radiation', 'units': 'V'}
+  alt                      {'long_name': 'height above mean sea level', 'standard_name': 'altitude', 'units': 'm'}
+  lat                      {'long_name': 'north latitude', 'units': 'degree_north', 'valid_max': 90.0, 'valid_min': -90.0}
+  lon                      {'long_name': 'east longitude', 'units': 'degree_east', 'valid_max': 180.0, 'valid_min': -180.0}
+  lw_sensor_status         {'coordinates': 'alt lat lon', 'flag_meanings': 'ok warn low_anomaly high_anomaly broken', 'flag_values': [0, 1, 2, 3, 4], 'long_name': 'pyrgeometer status flag'}
+  sensor_set               {'coordinates': 'alt lat lon', 'flag_meanings': 'CGR4_140034,_CHP1_140059,_CMP21_140337,_CMP21_140356 CGR4_220446,_CHP1_140059,_CMP21_140337,_CMP21_140356 CGR4_220446,_CHP1_160388,_CMP21_140337,_CMP21_140356 CGR4_150139,_CHP1_160388,_CMP21_160653,_CMP21_160654 ', 'flag_values': [1, 2, 3, 4, 0]}
+  sw_dir_sensor_status     {'coordinates': 'alt lat lon', 'flag_meanings': 'ok warn low_anomaly high_anomaly broken', 'flag_values': [0, 1, 2, 3, 4], 'long_name': 'pyrheliometer status flag'}
+  time                     {'axis': 'T', 'calendar': 'proleptic_gregorian', 'standard_name': 'time', 'units': 'microseconds since 1970-01-01', 'units_metadata': 'leap_seconds: utc'}
+
+================ L2 10M ================
+dataset attrs:
+  Conventions: CF-1.12
+  _cutoff_date: 2026-09-25T23:55:00.000001000
+  bcoproc_version: 0.0.0.post2256.dev0+3c9a772
+  institution: Max Planck Institute for Meteorology, Hamburg
+  license: CC0-1.0
+  location: The Barbados Cloud Observatory (BCO), Deebles Point, Barbados, West Indies
+  platform: BCO
+  source: https://swift.dkrz.de/v1/dkrz_948e7d4bbfbb445fbff5315fc433e36a/airflow_production/BCO.radiation_x255960_0_PT1M.zarr
+  summary: This dataset contains measurements of downwelling shortwave and longwave radiation measurements from sensors mounted on the table of a SOLYS2 sun tracker at the BCO.
+  title: Radiation data from BCO (Level 2)
+  tool_versions: {"Python": "3.14.3 (main, Mar  3 2026, 14:59:53) [Clang 21.1.4 ]", "MarkupSafe": "3.0.3", "wrapt": "2.4.0", "dask": "2026.8.0", "packaging": "26.3", "pandas": "3.0.5", "numpy_groupies": "0.11.3", "numcodecs": "0.15.1", "
+
+per-array attrs:
+  lw_down_diffuse          {'cell_methods': 'time: mean', 'coordinates': 'alt lat lon', 'long_name': 'Longwave downwelling diffuse radiation', 'standard_name': 'surface_downwelling_longwave_flux_in_air', 'units': 'W m-2'}
+  raw_count                {'cell_methods': 'time: sum', 'coordinates': 'alt lat lon'}
+  sw_down_diffuse          {'cell_methods': 'time: mean', 'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling diffuse radiation', 'standard_name': 'surface_diffuse_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  sw_down_global           {'cell_methods': 'time: mean', 'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling global radiation', 'standard_name': 'surface_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  sw_down_suntracker       {'cell_methods': 'time: mean', 'coordinates': 'alt lat lon', 'long_name': 'Shortwave downwelling direct radiation', 'standard_name': 'surface_direct_downwelling_shortwave_flux_in_air', 'units': 'W m-2'}
+  time                     {'axis': 'T', 'calendar': 'proleptic_gregorian', 'standard_name': 'time', 'units': 'microseconds since 1970-01-01', 'units_metadata': 'leap_seconds: utc'}
+  time_bounds              {'calendar': 'proleptic_gregorian', 'coordinates': 'alt lat lon', 'units': 'microseconds since 1970-01-01'}
